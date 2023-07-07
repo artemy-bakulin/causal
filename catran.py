@@ -84,7 +84,7 @@ class Dataset(pl.LightningDataModule):
 class MyModel(AbstractInferenceModel):
     
     def __init__(self,
-                batch_size=2000,
+                batch_size=2048,
                 N_SAMPLE_GENES=500,
                 LR = .0001,
                 WD = 0.05,
