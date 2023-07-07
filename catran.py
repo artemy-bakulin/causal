@@ -387,7 +387,7 @@ class Catran(pl.LightningModule):
         x_emb = self.embedding(gene_idxs)
 
 
-        attn_weights = self.attn(x_emb, x_emb, function='softmax')
+        attn_weights = self.attn(x_emb, x_emb, function='sigmoid')
 
         x_emb = x_emb[None, :, :].repeat((x.shape[0], 1, 1))
         x = x[:, :, None]
