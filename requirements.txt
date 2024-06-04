@@ -5,7 +5,7 @@ lightning-cloud==0.5.33
 lightning-utilities==0.8.0
 lion-pytorch==0.0.7
 pytorch_metric_learning
-fastapi==0.95.1
+fastapi>=0.109.1
 numpy==1.23.4
 pandas==1.5.1
 torchvision
